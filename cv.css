@@ -7,7 +7,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #f4f4f4;
+  background-color: #2d2525;
   line-height: 1.6;
 }
 
@@ -15,7 +15,7 @@ body {
   display: flex;
   max-width: 1100px;
   margin: 40px auto;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid #ddd;
@@ -24,7 +24,7 @@ body {
 }
 
 .left-column {
-  background-color: #2c3e50;
+  background-color: rgb(53, 53, 53);
   color: #ecf0f1;
   width: 35%;
   padding: 40px 20px;
@@ -61,13 +61,40 @@ body {
 
   text-transform: uppercase;
 }
+h2 {
+  font-size: 30px;
+  color: #fff;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.education-item {
+  margin-bottom: 20px;
+}
+
+.education-item .school-name {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.education-item p {
+  font-size: 16px;
+  color: #ddd;
+  margin: 2px 0;
+}
+
+.education-item p:last-child {
+  color: #aaa;
+}
 
 .left-column h3 {
   font-weight: bold;
 }
 
 .left-column ul {
-  list-style-type: none;
+  list-style-type: disc;
   padding: 0;
 }
 
@@ -78,9 +105,8 @@ body {
 }
 
 .left-column ul li::before {
-  content: "•";
   position: absolute;
-  left: 0;
+  left: -20px;
   color: #3498db;
 }
 
@@ -95,7 +121,7 @@ body {
 
 /* Định dạng cho khung tên riêng */
 .name-box {
-  background-color: #b6c4c5;
+  background-color: rgb(240, 240, 240);
   color: rgb(8, 1, 1);
   padding: 70px;
 
@@ -193,10 +219,52 @@ button:hover {
 .contact-item i {
   font-size: 1.2em;
   margin-right: 10px;
-  color: #3498db;
+  color: #000;
 }
 
 /* Đảm bảo .left-column luôn nằm trên cùng */
 .left-column {
   z-index: 2;
+}
+.references {
+  padding: 20px 0;
+}
+
+.references h2 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+.references-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.references-item .reference {
+  width: 45%;
+}
+
+.references-item .reference h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000;
+}
+
+.references-item .reference p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.references-item .reference p:first-of-type {
+  font-weight: bold;
+}
+
+.references-item .reference p:nth-of-type(2) {
+  margin-bottom: 10px;
 }
